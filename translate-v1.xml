@@ -1,0 +1,27 @@
+<APIProxy revision="6" name="translate-v1">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1687621376568</CreatedAt>
+    <LastModifiedAt>1687621376568</LastModifiedAt>
+    <BasePaths>/translate/v1</BasePaths>
+    <Policies>
+        <Policy>JS-BuildLanguagesResponse</Policy>
+        <Policy>AM-BuildLanguagesRequest</Policy>
+        <Policy>AM-BuildTranslateRequest</Policy>
+        <Policy>AM-BuildTranslateResponse</Policy>
+        <Policy>VAK-VerifyKey</Policy>
+        <Policy>Q-EnforceQuota</Policy>
+        <Policy>ML-LogTranslation</Policy>
+        <Policy>AM-BuildErrorResponse</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://BuildLanguagesResponse.js</Resource>
+        <Resource>properties://language.properties</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

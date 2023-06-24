@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TargetEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows/>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <HTTPTargetConnection>
+        <URL>https://translation.googleapis.com/language/translate/v2</URL>
+        <Authentication>
+            <GoogleAccessToken>
+                <Scopes>
+                    <Scope>https://www.googleapis.com/auth/cloud-translation</Scope>
+                </Scopes>
+            </GoogleAccessToken>
+        </Authentication>
+    </HTTPTargetConnection>
+    <FaultRules>
+        <FaultRule name="invalid_request_rule">
+            <Step>
+                <Name>AM-BuildErrorResponse</Name>
+            </Step>
+            <Condition>(fault.name = "ErrorResponseCode")</Condition>
+        </FaultRule>
+    </FaultRules>
+</TargetEndpoint>
