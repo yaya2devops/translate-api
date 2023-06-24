@@ -2,6 +2,8 @@
 
 The project demonstrates the process of developing, [securing](policies) and creating a product-ready API for translation.
 
+![Research & Developement - APIS](assets/R&D-translation-api-poc.jpeg)
+
 To access the translation API, you can use the following endpoint
 ```sh
 https://api.gtranslater.com/translate/v1?lang=
