@@ -27,7 +27,7 @@ IP@apigeex-vm:~$ curl -i -k -X POST "https://api.gtranslater.com/translate/v1?la
 Unlock further seamless language translation with our German Translation API. 
 
 
-```JSON
+```HTTP
 HTTP/2 200 
 content-type: application/json
 x-request-id: 98af2e9c-a33e-468b-9aa0-b09b2e76ca0a
@@ -35,7 +35,8 @@ content-length: 57
 date: Sat, 24 Jun 2023 15:47:05 GMT
 via: 1.1 google
 alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-
+```
+```JSON
 {"translated":"Hallo, ich bin Yahya, ein DevOps-Berater"}
 ```
 
@@ -53,7 +54,7 @@ IP@apigeex-vm:~$ curl -i -k -X POST "https://api.gtranslater.com/translate/v1?la
 
 Transform text from English to German effortlessly
 
-```JSON
+```HTTP
 HTTP/2 200 
 content-type: application/json
 x-request-id: 6e535c4c-2f63-4771-b99c-7497ab5a9cdb
@@ -61,11 +62,12 @@ content-length: 66
 date: Sat, 24 Jun 2023 15:48:41 GMT
 via: 1.1 google
 alt-svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
-
+```
+```JSON
 {"translated":"Ich arbeite in der Cloud, um Mehrwert zu schaffen"}
 ```
 
-The API allows you to translate in wide range of languages. Consult [supported languages.](https://cloud.google.com/translate/docs/languages)
+The API allows you to translate in wide range of languages. <br>Consult [supported languages.](https://cloud.google.com/translate/docs/languages)
 
 
 
